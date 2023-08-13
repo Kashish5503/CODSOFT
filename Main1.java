@@ -183,7 +183,7 @@ public class Main1 {
 
         try {
             Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/student", "root", "power123");
+                    "jdbc:mysql://localhost:3306/student", "root", "root");
             Statement stmt = con.createStatement();
             ResultSet rs = stmt.executeQuery("select * from st_data");
             while (rs.next())
